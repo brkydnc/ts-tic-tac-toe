@@ -97,7 +97,6 @@ var fps = 30;
 
 //Setup
 statusHeader.innerHTML = board.check();
-
 for (let i = 0; i < 9; i++) {
 	htmlCells[i] = document.getElementById(`${i + 1}`);
 }
