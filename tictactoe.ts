@@ -12,7 +12,7 @@ namespace GameUtils {
         Draw = "Its a DRAW!",
         NotFinishedYet = "Game is not over. Yet."
     }
-    
+
     var winningStrikes: Array<Array<Number>> = [
         //Horizontal
         [1, 2, 3],
@@ -105,7 +105,7 @@ for (let i = 0; i < 9; i++) {
 for (let i in htmlCells) {
     htmlCells[i].addEventListener('click', (e) => {
         // @ts-ignore
-        board.markINM(e.target.id); // <- used for this
+        board.markINM(e.target.id); // <- That is used for this
         if (board.check() != GameUtils.Victor.NotFinishedYet) {
             statusHeader.innerHTML = board.check();
             board.clean();
