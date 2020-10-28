@@ -7,12 +7,12 @@ namespace GameUtils {
     }
 
     export enum Victor {
-        X = "Player1 won the game!",
-        O = "Player2 won the game!",
-        Draw = "Draw!",
-        NotFinishedYet = "No one won yet"
+        X = "GAME! Player 1 WON!",
+        O = "GAME! Player 2 WON!",
+        Draw = "Its a DRAW!",
+        NotFinishedYet = "Game is not over. Yet."
     }
-
+    
     var winningStrikes: Array<Array<Number>> = [
         //Horizontal
         [1, 2, 3],
